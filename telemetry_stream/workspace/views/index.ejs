@@ -1,0 +1,228 @@
+<% include ./partials/header %>
+
+<h1></h1>
+
+<meta http-equiv="refresh" content="8"> <!-- page refreshes every 10 seconds-->
+<div class="container-fluid">
+    <div class="row">
+        <div class="table-responsive offset-md-1 col-md-4 ">
+            <table class="table table-striped table-dark">
+              <thead>
+                <tr>
+                  <th scope="col">#</th>
+                  <th scope="col">Numerical</th>
+                  <th scope="col">Value</th>
+                </tr>
+              </thead>
+              <tbody>
+                <% obj.teles.forEach(function(tele){ %>
+                    <tr>
+                      <!--   THIS PAGE IS BEHIND!!!!!-->
+                      <td>1</td>
+                      <td style="color:<%=obj.ranges.range1 %>; font-weight: bold;">create_date</td>    
+                      <td style="color:<%=obj.ranges.range1 %>; font-weight: bold;"><%=tele.create_date%></td>
+                    </tr>
+                    <tr>
+                      <td>2</td>
+                      <td style="color:<%=obj.ranges.range2 %>; font-weight: bold;">p_suit</td>
+                      <td style="color:<%=obj.ranges.range2 %>; font-weight: bold;"><%=tele.p_suit%></td>
+                    </tr>
+                    <tr>
+                      <td>3</td>
+                      <td style="color:<%=obj.ranges.range3 %>; font-weight: bold;">heart_bpm</td>
+                      <td style="color:<%=obj.ranges.range3 %>; font-weight: bold;"><%=tele.heart_bpm%></td>
+                    </tr>
+                    <tr>
+                      <td>4</td>
+                      <td style="color:<%=obj.ranges.range4 %>; font-weight: bold;">p_sub</td>
+                      <td style="color:<%=obj.ranges.range4 %>; font-weight: bold;"><%=tele.p_sub%></td>
+                    </tr>
+                    <tr>
+                      <td>5</td>
+                      <td style="color:<%=obj.ranges.range5 %>; font-weight: bold;">t_sub</td>
+                      <td style="color:<%=obj.ranges.range5 %>; font-weight: bold;"><%=tele.t_sub%></td>
+                    </tr>
+                    <tr>
+                      <td>6</td>
+                      <td style="color:<%=obj.ranges.range6 %>; font-weight: bold;">v_fan</td>
+                      <td style="color:<%=obj.ranges.range6 %>; font-weight: bold;"><%=tele.v_fan%></td>
+                    </tr>
+                    <!--<tr>-->
+                    <!--  <td>8</td>-->
+                    <!--  <td style="color:</%=obj.ranges.range8 %>; font-weight: bold;">t_eva</td>-->
+                    <!--  <td style="color:</%=obj.ranges.range8 %>; font-weight: bold;"></%=tele.t_eva%></td>-->
+                    <!--</tr>-->
+                    <tr>
+                      <td>7</td>
+                      <td style="color:<%=obj.ranges.range7 %>; font-weight: bold;">p_o2</td>
+                      <td style="color:<%=obj.ranges.range7 %>; font-weight: bold;"><%=tele.p_o2%></td>
+                    </tr>
+                    <tr>
+                      <td>8</td>
+                      <td style="color:<%=obj.ranges.range8 %>; font-weight: bold;">rate_o2</td>
+                      <td style="color:<%=obj.ranges.range8 %>; font-weight: bold;"><%=tele.rate_o2%></td>
+                    </tr>
+                    <tr>
+                      <td>9</td>
+                      <td style="color:<%=obj.ranges.range9 %>; font-weight: bold;">cap_battery</td>
+                      <td style="color:<%=obj.ranges.range9 %>; font-weight: bold;"><%=tele.cap_battery%></td>
+                    </tr>
+                    <tr>
+                      <td>10</td>
+                      <td style="color:<%=obj.ranges.range10 %>; font-weight: bold;">p_h2o_g</td>
+                      <td style="color:<%=obj.ranges.range10 %>; font-weight: bold;"><%=tele.p_h2o_g%></td>
+                    </tr>
+                    <tr>
+                      <td>11</td>
+                      <td style="color:<%=obj.ranges.range11 %>; font-weight: bold;">p_h2o_l</td>
+                      <td style="color:<%=obj.ranges.range11 %>; font-weight: bold;"><%=tele.p_h2o_l%></td>
+                    </tr>
+                    <tr>
+                      <td>12</td>
+                      <td style="color:<%=obj.ranges.range12 %>; font-weight: bold;">p_sop</td>
+                      <td style="color:<%=obj.ranges.range12 %>; font-weight: bold;"><%=tele.p_sop%></td>
+                    </tr>
+                    <tr>
+                      <td>13</td>
+                      <td style="color:<%=obj.ranges.range13 %>; font-weight: bold;">rate_sop</td>
+                      <td style="color:<%=obj.ranges.range13 %>; font-weight: bold;"><%=tele.rate_sop%></td>
+                    </tr>
+                    <tr>
+                      <td>14</td>
+                      <td style="color:<%=obj.ranges.range14 %>;font-weight: bold;">t_battery</td>
+                      <td style="color:<%=obj.ranges.range14 %>; font-weight: bold;"><%=tele.t_battery%></td>
+                    </tr>
+                    <tr>
+                      <td>15</td>
+                      <td style="color:<%=obj.ranges.range15 %>; font-weight: bold;">t_oxygen</td>
+                      <td style="color:<%=obj.ranges.range15 %>; font-weight: bold;"><%=tele.t_oxygen%></td>
+                    </tr>
+                    <tr>
+                      <td>16</td>
+                      <td style="color:<%=obj.ranges.range16 %>; font-weight: bold;">t_water</td>
+                      <td style="color:<%=obj.ranges.range16 %>; font-weight: bold;"><%=tele.t_water%></td>
+                    </tr>
+                <% }); %>
+              </tbody>
+            </table>
+        </div>
+        <div class="table-responsive  col-md-4 offset-md-2">
+            <table class="table table-striped table-dark">
+              <thead>
+                <tr>
+                  <th scope="col">#</th>
+                  <th scope="col">Switch</th>
+                  <th scope="col">Value</th>
+                </tr>
+              </thead>
+              <tbody>
+                <% obj.swits.forEach(function(swit){ %>
+                    <!--<tr>-->
+                    <!--  <td>1</td>-->
+                    <!--  <td style="color:</%=obj.ranges2.range1 %>; font-weight: bold;">batterAmpHigh</td>-->
+                    <!--  <td style="color:</%=obj.ranges2.range1 %>; font-weight: bold;"></%=swit.batterAmpHigh%></td>-->
+                    <!--</tr>-->
+                    <!--<tr>-->
+                    <!--  <td>2</td>-->
+                    <!--  <td style="color:</%=obj.ranges2.range2 %>; font-weight: bold;">batteryVdcLow</td>-->
+                    <!--  <td style="color:</%=obj.ranges2.range2 %>; font-weight: bold;"></%=swit.batteryVdcLow%></td>-->
+                    <!--</tr>                    -->
+                    <!--<tr>-->
+                    <!--  <td>3</td>-->
+                    <!--  <td style="color:</%=obj.ranges2.range3 %>; font-weight: bold;">suitPressLow</td>-->
+                    <!--  <td style="color:</%=obj.ranges2.range3 %>; font-weight: bold;"></%=swit.suitPressLow%></td>-->
+                    <!--</tr>                    -->
+                    <tr>
+                      <td>1</td>
+                      <td style="color:<%=obj.ranges2.range1 %>; font-weight: bold;">create_date</td>
+                      <td style="color:<%=obj.ranges2.range1 %>; font-weight: bold;"><%=swit.create_date%></td>
+                    </tr>
+                    <tr>
+                      <td>2</td>
+                      <td style="color:<%=obj.ranges2.range2 %>; font-weight: bold;">sop_on</td>
+                      <td style="color:<%=obj.ranges2.range2 %>; font-weight: bold;"><%=swit.sop_on%></td>
+                    </tr>                    
+                    <tr>
+                    <!--  <td>5</td>-->
+                    <!--  <td style="color:</%=obj.ranges2.range5 %>; font-weight: bold;">o2HighUse</td>-->
+                    <!--  <td style="color:</%=obj.ranges2.range5 %>; font-weight: bold;"></%=swit.o2HighUse%></td>-->
+                    <!--</tr>                    -->
+                    <!--<tr>-->
+                    <!--  <td>6</td>-->
+                    <!--  <td style="color:</%=obj.ranges2.range6 %>; font-weight: bold;">sopPressLow</td>-->
+                    <!--  <td style="color:</%=obj.ranges2.range6 %>; font-weight: bold;"></%=swit.sopPressLow%></td>-->
+                    <!--</tr>                    -->
+                    <tr>
+                      <td>3</td>
+                      <td style="color:<%=obj.ranges2.range3 %>; font-weight: bold;">sspe</td>
+                      <td style="color:<%=obj.ranges2.range3 %>; font-weight: bold;"><%=swit.sspe%></td>
+                    </tr>                  
+                    <!--<tr>-->
+                    <!--  <td>8</td>-->
+                    <!--  <td style="color:</%=obj.ranges2.range8 %>; font-weight: bold;">suitPressHigh</td>-->
+                    <!--  <td style="color:</%=obj.ranges2.range8 %>; font-weight: bold;"></%=swit.suitPressHigh%></td>-->
+                    <!--</tr>                    -->
+                    <!--<tr>-->
+                    <!--  <td>9</td>-->
+                    <!--  <td style="color:</%=obj.ranges2.range9 %>; font-weight: bold;">sopPressLow</td>-->
+                    <!--  <td style="color:</%=obj.ranges2.range9 %>; font-weight: bold;"></%=swit.sopPressLow%></td>-->
+                    <!--</tr>                    -->
+                    <tr>
+                      <td>4</td>
+                      <td style="color:<%=obj.ranges2.range4 %>; font-weight: bold;">fan_error</td>
+                      <td style="color:<%=obj.ranges2.range4 %>; font-weight: bold;"><%=swit.fan_error%></td>
+                    </tr>
+                    <tr>
+                      <td>5</td>
+                      <td style="color:<%=obj.ranges2.range5 %>; font-weight: bold;">vent_error</td>
+                      <td style="color:<%=obj.ranges2.range5 %>; font-weight: bold;"><%=swit.vent_error%></td>
+                    </tr>
+                    <tr>
+                      <td>6</td>
+                      <td style="color:<%=obj.ranges2.range6 %>; font-weight: bold;">vehicle_power</td>
+                      <td style="color:<%=obj.ranges2.range6 %>; font-weight: bold;"><%=swit.vehicle_power%></td>
+                    </tr>                    
+                    <!--<tr>-->
+                    <!--  <td>12</td>-->
+                    <!--  <td style="color:</%=obj.ranges2.range12 %>; font-weight: bold;">co2High</td>-->
+                    <!--  <td style="color:</%=obj.ranges2.range12 %>; font-weight: bold;"></%=swit.co2High%></td>-->
+                    <!--</tr>                    -->
+                    <tr>
+                      <td>7</td>
+                      <td style="color:<%=obj.ranges2.range7 %>; font-weight: bold;">h2o_off</td>
+                      <td style="color:<%=obj.ranges2.range7 %>; font-weight: bold;"><%=swit.h2o_off%></td>
+                    </tr>                    
+                    <tr>
+                      <td>8</td>
+                      <td style="color:<%=obj.ranges2.range8 %>; font-weight: bold;">o2_off</td>
+                      <td style="color:<%=obj.ranges2.range8 %>; font-weight: bold;"><%=swit.o2_off%></td>
+                    </tr>
+                    
+                <% }); %>
+              </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+    <!--<div class="container bg-dark">-->
+    <!--        </% obj.swits.forEach(function(swit){ %>-->
+    <!--            <div class="col">-->
+    <!--                <h2 class="bg-info">sop_on             : </%=swit.sop_on%></h2>-->
+    <!--                <h2 class="bg-info">sspe               : </%=swit.sspe%></h2>-->
+    <!--                <h2 class="bg-info">suitPressHigh      : </%=swit.suitPressHigh%></h2>-->
+    <!--                <h2 class="bg-info">o2HighUse          : </%=swit.o2HighUse%></h2>-->
+    <!--                <h2 class="bg-info">sopPressLow        : </%=swit.sopPressLow%></h2>-->
+    <!--                <h2 class="bg-info">fan_error          : </%=swit.fan_error%></h2>-->
+    <!--                <h2 class="bg-info">vent_error         : </%=swit.vent_error%></h2>-->
+    <!--                <h2 class="bg-info">vehicle_power      : </%=swit.vehicle_power%></h2>-->
+    <!--                <h2 class="bg-info">co2High            : </%=swit.co2High%></h2>-->
+    <!--                <h2 class="bg-info">h2o_off            : </%=swit.h2o_off%></h2>-->
+    <!--                <h2 class="bg-info">o2_off             : </%=swit.o2_off%></h2>-->
+                    
+    <!--            </div>-->
+    <!--        </% }) %>-->
+        
+    <!--    </div>-->
+    <!--</div>-->
+    
+<% include ./partials/footer %>

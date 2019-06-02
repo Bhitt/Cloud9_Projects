@@ -1,0 +1,40 @@
+numerical data {
+    create_date     |   time/date of tele stream    | range : 
+    heart_bpm       |   heart beats per minute      | range : 
+    //i_suit_p        |   *** internal suit pressure  | range : (2-4 psid)    
+    p_sub           |   sub pressure                | range : (2-4)
+    t_sub           |   sub temperature             | range : (degress F)
+    v_fan           |   fan tachometer              | range : (10000 - 40000 RPM)
+    //t_eva           |   stopwatch for current EVA   | 
+    p_o2            |   oxygen pressure             | range : (750 - 950 psia)
+    rate_o2         |   oxygen rate                 | range : (0.5 - 1 psi/min)
+    cap_battery     |   battery capacity            | range : (0 - 30 amp-hr)
+    p_h2o_g         |   H2o gas pressure            | range : (14 - 16 psia)
+    p_h2o_l         |   H2o liquid pressure         | range : (14 - 16 psia)
+    p_sop           |   Secondary oxy tank pressure | range : (750 - 950)
+    rate_sop        |   Secondary oxy tank rate     | range : (0.5 - 1 psi/min)
+    t_battery       |   time life battery           | range : (0-10 hours)  | format : "hh:mm:ss"
+    t_oxygen        |   time life oxygen            | range : (0-10 hours)  | format : "hh:mm:ss"
+    t_water         |   time life water             | range : (0-10 hours)  | format : "hh:mm:ss"
+}
+
+switches {
+    create_date     |   time/date of swit stream    | range :
+    //batterAmpHigh   |   ***Battery amp high         | range : ( >4 )        | format : amps
+    //batteryVdcLow   |   ***Battery VDC low          | range : ( <15 )       | format : volts
+    //suitPressLow    |   ***Suit pressure low        | range : ( <2 )        | format : psid
+    sop_on          |   Secondary Oxy pack active   | boolean
+    sspe            |   Spacesuit Pressure Emergency| boolean
+    //suitPressHigh   |   ***Spacesuit Pressure High  | range : ( >5 )        | format : psid
+    //o2HighUse       |   ***Oxygen use high          | range : ( >1 )        | format : psi/min 
+    //sopPressLow     |   ***Secondary Oxy Pack Low   | range : ( <700 )      | format : psia
+    fan_error       |   Fan Failure                 | boolean
+    vent_error      |   No vent flow                | boolean
+    //co2High         |   ***Co2 levels high          | range : ( >500 )      | format : ppm  
+    vehicle_power   |   Vehicle Power Present       | boolean
+    h2o_off         |   h2o system offline          | boolean
+    o2_off          |   o2 system offline           | boolean
+}
+
+
+*** key name not yet given

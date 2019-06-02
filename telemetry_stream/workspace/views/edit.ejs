@@ -1,0 +1,50 @@
+<% include ./partials/header %>
+<div class="col-sm-6">
+    
+<form action="/data/<%=tele._id%>?_method=PUT" method="POST">
+    <div class="form-group">
+        <label for="p_sub">P_Sub</label>
+        <input type="text" class="form-control" id="tele[p_sub]" value="<%= tele.p_sub%>">
+    </div>
+    <div class="form-group">
+        <label for="v_fan">V_Fan</label>
+        <input type="text" class="form-control" id="tele[v_fan]" value="<%= tele.v_fan%>">
+    </div>
+    <div class="form-group">
+        <label for="t_eva">T_EVA</label>
+        <input type="text" class="form-control" id="tele[t_eva]" value="<%= tele.t_eva%>">
+    </div>
+    <div class="form-group">
+        <label for="p_o2">P_o2</label>
+        <input type="text" class="form-control" id="tele[p_o2]" value="<%= tele.p_o2%>">
+    </div>
+    <div class="form-group">
+        <label for="rate_o2">Rate_o2</label>
+        <input type="text" class="form-control" id="tele[rate_o2]" value="<%= tele.rate_o2%>">
+    </div>
+        <div class="form-group">
+        <label for="cap_battery">Cap_Battery</label>
+        <input type="text" class="form-control" id="tele[cap_battery]" value="<%= tele.cap_battery%>">
+    </div>
+        <div class="form-group">
+        <label for="p_h2o_g">p_h2o_g</label>
+        <input type="text" class="form-control" id="tele[p_h2o_g]" value="<%= tele.p_h2o_g%>">
+    </div>
+        <div class="form-group">
+        <label for="p_h2o_l">p_h2o_l</label>
+        <input type="text" class="form-control" id="tele[p_h2o_l]" value="<%= tele.p_h2o_l%>">
+    </div>
+        <div class="form-group">
+        <label for="p_sop">p_sop</label>
+        <input type="text" class="form-control" id="tele[p_sop]" value="<%= tele.p_sop%>">
+    </div>
+        <div class="form-group">
+        <label for="rate_sop">rate_sop</label>
+        <input type="text" class="form-control" id="tele[rate_sop]" value="<%= tele.rate_sop%>">
+    </div>
+    <button type="submit" class="btn btn-primary">Submit</button>
+</form>
+        
+</div>
+        
+<% include ./partials/header %>
